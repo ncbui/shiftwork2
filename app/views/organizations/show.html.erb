@@ -32,7 +32,7 @@
                     <% unless shift.shift_open %>
                     <div class="row mb-3">
                         <div class="col-5 font-weight-bold">Shift Worker</div>
-                        <div class="col-7"><%= shift.shift_worker_name %></div>
+                        <div class="col-7"><%= link_to shift.shift_worker_name, worker_path(shift.worker_id) %></div>
                     </div>
                     <% end %>
                     <div class="text-right">
